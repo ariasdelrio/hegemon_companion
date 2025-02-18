@@ -1,4 +1,4 @@
-package com.ariasdelrio.hegemony_helper
+package com.ariasdelrio.hegemon_companion
 
 import io.flutter.embedding.android.FlutterActivity
 
