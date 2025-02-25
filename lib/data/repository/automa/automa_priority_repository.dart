@@ -33,8 +33,8 @@ class AutomaPriorityRepository {
     return _currentPriority;
   }
 
-  void updatePriority(AutomaDecisionItem decisionItem, int newLevel) {
-    _currentPriority = _currentPriority.adjustItemPriority(decisionItem, (_) => newLevel);
+  void updatePriority(AutomaDecisionItem decisionItem, int Function(int) adjustLevel) {
+    _currentPriority = _currentPriority.adjustItemPriority(decisionItem, adjustLevel);
   }
 
   void collapse() {
