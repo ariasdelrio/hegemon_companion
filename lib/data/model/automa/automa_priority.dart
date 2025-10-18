@@ -82,19 +82,19 @@ class AutomaPriorityItem {
 }
 
 enum AutomaDecisionItem {
-  buildCompany(AutomaDecisionItemType.action, 'BC', 'Build Company', 0xFF22A3DB),
+  buildCompany(AutomaDecisionItemType.action, 'BC', 'Build Company', 0xFF027CCC),
   proposeBill(AutomaDecisionItemType.action, 'PB', 'Propose Bill', 0xFFAEB0AF),
-  specialAction(AutomaDecisionItemType.action, 'SA', 'Special Action', 0xFFED66A8),
+  specialAction(AutomaDecisionItemType.action, 'SA', 'Special Action', 0xFFE63E8D),
   lobby(AutomaDecisionItemType.action, 'LOB', 'Lobby', 0xFFC057B1),
   sellCompany(AutomaDecisionItemType.action, 'SC', 'Sell Company', 0xFFFFAA55),
   sellToTheForeignMarket(AutomaDecisionItemType.action, 'SFM', 'Sell to the Foreign Market', 0xFFFF7074),
-  fiscalPolicy(AutomaDecisionItemType.policy, '1', '1 - Fiscal Policy', 0xFF88AECE),
-  laborMarket(AutomaDecisionItemType.policy, '2', '2 - Labor Market', 0xFFB5A4C6),
-  taxation(AutomaDecisionItemType.policy, '3', '3 - Taxation', 0xFFDCA8CE),
-  healthcare(AutomaDecisionItemType.policy, '4', '4 - Healthcare', 0xFFDC493F),
-  education(AutomaDecisionItemType.policy, '5', '5 - Education', 0xFFD9884E),
-  foreignTrade(AutomaDecisionItemType.policy, '6', '6 - Foreign Trade', 0xFFBDA692),
-  immigration(AutomaDecisionItemType.policy, '7', '7 - Immigration', 0xFFAAA198);
+  fiscalPolicy(AutomaDecisionItemType.policy, '1', '1 - Fiscal Policy', 0xFF0276AC),
+  laborMarket(AutomaDecisionItemType.policy, '2', '2 - Labor Market', 0xFF716199),
+  taxation(AutomaDecisionItemType.policy, '3', '3 - Taxation', 0xFFA73D8C),
+  healthcare(AutomaDecisionItemType.policy, '4', '4 - Healthcare', 0xFFB60000),
+    education(AutomaDecisionItemType.policy, '5', '5 - Education', 0xFFE67C03),
+  foreignTrade(AutomaDecisionItemType.policy, '6', '6 - Foreign Trade', 0xFFA27846),
+  immigration(AutomaDecisionItemType.policy, '7', '7 - Immigration', 0xFF5E5E5E);
 
   const AutomaDecisionItem(this.type, this.code, this.name, this.colorARGB);
 
