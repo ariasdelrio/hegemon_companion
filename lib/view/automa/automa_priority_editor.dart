@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:hegemon_companion/data/model/automa/automa_priority.dart';
 import 'package:provider/provider.dart';
 
-import '../../view_model/automa_priority_view_model.dart';
+import '../../view_model/automa_priority_vm.dart';
 import '../common/common.dart';
 import '../common/priority_card.dart';
 
@@ -74,8 +74,8 @@ class PriorityChart extends StatelessWidget {
             child: Padding(
                 padding: EdgeInsets.all(8),
                 child: Stack(alignment: AlignmentDirectional.center, children: [
-                  Icon(Icons.circle, size: 30, color: Color(0xFF6A7686)),
-                  Icon(size: 20, Icons.radio_button_unchecked, color: Color(0xFFFFED7A)),
+                  Icon(Icons.circle, size: 30, color: Color(0xFF222C34)),
+                  Icon(size: 20, Icons.radio_button_unchecked, color: Color(0xFFF7AD19)),
                 ]))),
         Expanded(
           child: _buildPriorityRowHalf(context, viewModel, AutomaDecisionItemType.policy, level),

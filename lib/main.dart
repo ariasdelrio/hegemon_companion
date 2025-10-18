@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:hegemon_companion/view/automa_card/automa_card.dart';
-import 'package:hegemon_companion/view_model/automa_action_view_model.dart';
+import 'package:hegemon_companion/view/automa/card_builder.dart';
+import 'package:hegemon_companion/view_model/automa_card_vm.dart';
 import 'package:provider/provider.dart';
 
-import 'view_model/automa_priority_view_model.dart';
+import 'view_model/automa_priority_vm.dart';
 
 void main() {
   runApp(
     MultiProvider(providers: [
       ChangeNotifierProvider(create: (_) => AutomaPriorityViewModel()),
-      ChangeNotifierProvider(create: (_) => AutomaActionViewModel())
+      ChangeNotifierProvider(create: (_) => AutomaCardViewModel()),
     ], child: const HegemonCompanion()),
   );
 }
@@ -24,7 +24,8 @@ class HegemonCompanion extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
       ),
-      home: AutomaCard(),
+      home: CardBuilder(),
+      // home: CheckActionForm(),
     );
   }
 }
