@@ -56,7 +56,7 @@ class PriorityChart extends StatelessWidget {
                         builder: (BuildContext context) => ChangePriorityDialog(automaDecisionItem: item, level: level),
                       );
                       if (newLevel != null) {
-                        viewModel.updatePriority(item, newLevel);
+                        viewModel.updatePriority(item, (_) => newLevel);
                       }
                     },
                     child: PriorityCard(automaDecisionItem: item),

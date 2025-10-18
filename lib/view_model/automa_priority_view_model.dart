@@ -32,8 +32,8 @@ class AutomaPriorityViewModel extends ChangeNotifier {
     return items.sublist(0, min(items.length, maxItems));
   }
 
-  Future<void> updatePriority(AutomaDecisionItem automaDecisionItem, int newLevel) async {
-    _repository.updatePriority(automaDecisionItem, newLevel);
+  Future<void> updatePriority(AutomaDecisionItem automaDecisionItem, int Function(int) adjustLevel) async {
+    _repository.updatePriority(automaDecisionItem, adjustLevel);
     _hasUnsavedChanges = true;
     notifyListeners();
   }
